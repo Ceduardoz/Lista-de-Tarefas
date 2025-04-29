@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+:root{
+    --color1: #45C4B0;
+    --color2: #f3f3f3;
+    --color3: #012030;  
+    
+    --fontDestaque: 'Open sans', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    outline: 0;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: var(--color3);
+    font-family: var(--fontDestaque);
+    line-height: 1.5em;
+}
+
+.container {
+    position: relative;
+    background-color: var(--color2); 
+    max-width: 640px;
+    margin: 10vh auto;
+    padding: 20px 30px;
+    border-radius: 16px;
+}
+.container > h1 {
+    text-align: center;
+    font-size: 36px;
+    padding-bottom: 20px;
+    position: relative;
+    margin-bottom: 40px;
+    font-weight: 600;
+}
+    
+.container > h1::after {
+    content: "";
+    position: absolute;
+    width: 400px;
+    height: 4px;
+    background-color: var(--color3);
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 2px;
+}
+    
+.container > p > input{
+    font-size: 18px;
+    border: none;
+    box-shadow: 2px 2px 2px 2px rgb(188, 188, 188);
+    padding: 10px;
+    margin: 0px 150px 5px 15px;
+    border-radius: 16px;
+}   
+
+.container .btn-tarefa {
+    padding: 10px;
+    border: none;
+    border-radius: 16px;
+    box-shadow: 2px 2px 2px 2px rgb(188, 188, 188);
+}
+
+.container .btn-tarefa:hover {
+    background-color: var(--color3);
+    color: var(--color2);
+    transition: 0.5s;
+}
+
+.container .apagar{
+    padding-left: 30px;
+    border: none;
+}
